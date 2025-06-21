@@ -1,3 +1,33 @@
+@font-face {
+  font-family: montserrat;
+  src: url(./Assests/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: montserrat;
+  src: url(./Assests/Montserrat/Montserrat-Black.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: montserrat;
+  src: url(./Assests/Montserrat/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: montserrat;
+  src: url(./Assests/Montserrat/Montserrat-ExtraBold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: montserrat;
+  src: url(./Assests/Montserrat/Montserrat-Light.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: montserrat;
+  src: url(./Assests/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
 * {
   margin: 0;
   padding: 0;
@@ -68,8 +98,23 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
-  font-size: 1.15vw;
+  font-size: .90vw;
 }
+#right_btns{
+  margin-left: 30px;
+  gap: 20px;
+  display: flex;
+  align-items: end;
+}
+#right_btns button{
+  background-color: #000;
+  font-weight: 500;
+  padding: 12px 35px;
+  border-radius: 40px;
+  border:2px solid #a3d421;
+  font-size: .9vw;
+}
+
 video {
   height: 100%;
   width: 100%;
@@ -171,7 +216,7 @@ video {
   display: inline-block;
   font-size: 120px;
   font-weight: 900;
-  font-family: gilroy;
+  font-family: montserrat;
   margin-right: 20px;
   transition: all linear 0.3s;
   color: #000;
@@ -196,11 +241,12 @@ video {
   width: 100%;
   /* background-color: red; */
   display: flex;
-  padding: 0 50px;
+  padding: 15vw 50px;
   align-items: center;
   position: relative;
   z-index: 10;
   justify-content: space-around;
+  padding-bottom: 18vw;
 }
 #about-us img {
   height: 220px;
@@ -218,23 +264,29 @@ video {
   margin-bottom: 30px;
 }
 #about-us-in p {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 35px;
 }
 
 #cards-container {
   /* background-color: red; */
-  height: 60vh;
+  background: url(./Assests/dots-white.svg);
+  background-repeat: no-repeat;       
+  background-position: 13% 5%;        
+  background-size: 15%;              
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 70px;
+  /* align-items: center; */
+  /* justify-content: center; */
   position: relative;
   z-index: 10;
+  padding-top: 15vw;
+  padding: 0 5vw;
 }
 .card {
-  height: 80%;
-  width: 24%;
+  margin-top: 2vw;
+  height: 100%;
+  width: 36%;
   /* background-color: blue; */
   border-radius: 20px;
   background-size: cover;
@@ -243,7 +295,7 @@ video {
   transition: all ease 0.6s;
 }
 #card1 {
-  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&ssl=1);
 }
 #card2 {
   background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
